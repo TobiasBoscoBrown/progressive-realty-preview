@@ -257,6 +257,8 @@ section{padding:96px 0}
 .area-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .area{position:relative;border-radius:14px;min-height:140px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);color:#f1e6cd;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;backdrop-filter:blur(4px);transition:.2s}
 .area:hover{transform:translateY(-4px);background:rgba(255,255,255,.11);border-color:rgba(230,207,156,.4)}
+.area:nth-child(2n),.area:nth-child(3n){background:rgba(255,255,255,.06)}
+.area:nth-child(2n):hover,.area:nth-child(3n):hover{background:rgba(255,255,255,.11)}
 .area b{font-family:"Cormorant Garamond",serif;font-size:1.85rem;line-height:1}
 .area span{font-size:.82rem;color:#cabd9d;margin-top:6px}
 
