@@ -47,22 +47,25 @@
 </head>
 <body>
 
-<header class="nav">
+<header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="/">
+    <a class="brand" href="/" aria-label="Progressive Realty Corporation home">
       <div class="brand-mark">P</div>
-      <div><div class="brand-name">Progressive Realty</div><div class="brand-sub">Corporation &middot; Idaho</div></div>
+      <div class="brand-text"><div class="brand-name">Progressive Realty</div><div class="brand-sub">Corporation</div></div>
     </a>
-    <nav class="nav-links">
-      <a href="index.html#about">About Jim</a>
-      <a href="index.html#services">How I Help</a>
-      <a href="index.html#areas">Service Areas</a>
-      <a href="meridian-neighborhoods.html">Neighborhood Guide</a>
+    <nav class="nav-links" id="navlinks" aria-label="Primary">
+      <a href="index.html#search">Search Homes</a>
+      <a href="index.html#listings">Listings</a>
+      <a href="index.html#areas">Areas</a>
+      <a href="index.html#tools">Tools</a>
+      <a href="meridian-neighborhoods.html">Guide</a>
+      <a href="index.html#about">About</a>
       <a href="index.html#contact">Contact</a>
     </nav>
     <div class="nav-cta">
-      <span class="nav-phone"><span>Call or text</span> (208) 573-0471</span>
-      <a class="btn btn-gold" href="index.html#contact">Free Home Valuation</a>
+      <a class="nav-phone" href="tel:+12085730471">(208) 573-0471</a>
+      <a class="btn btn-gold btn-sm" href="index.html#valuation">Free Home Value</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
@@ -204,5 +207,8 @@
     </div>
   </div>
 </footer>
+<script>
+(function(){var t=document.getElementById('navToggle'),l=document.getElementById('navlinks');if(t&&l){t.addEventListener('click',function(){var o=l.classList.toggle('open');t.classList.toggle('x',o);t.setAttribute('aria-expanded',o);});}var n=document.getElementById('nav');addEventListener('scroll',function(){n.classList.toggle('scrolled',scrollY>10);});})();
+</script>
 </body>
 </html>
