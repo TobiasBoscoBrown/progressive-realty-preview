@@ -420,7 +420,7 @@ var LISTINGS=[
    document.getElementById('cRateV').textContent=(+r.value).toFixed(1)+'%';
    document.getElementById('cTermV').textContent=t.value+' years';
    document.getElementById('cResult').textContent=fmt(pay);
-   document.getElementById('cSub').textContent=fmt(loan)+' loan &middot; principal & interest';
+   document.getElementById('cSub').textContent=fmt(loan)+' loan · principal & interest';
  }
  [p,d,r,t].forEach(function(el){el.addEventListener('input',calc);}); calc();
 })();
